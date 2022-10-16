@@ -11,7 +11,6 @@ env:
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
-  DRM_PANFROST_PATCH: 0001-DRM-PANFROST.patch
 
 jobs:
   build:
