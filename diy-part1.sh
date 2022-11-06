@@ -14,7 +14,7 @@
 OPENCLASH_DIR="openclash"
 OPENCLASH_GIT="https://github.com/vernesong/OpenClash.git"
 OPENCLASH_SRC="luci-app-openclash"
-OPENCLASH_BRANCH="dev"
+OPENCLASH_BRANCH="master"
 
 # git shallow clone
 shallowClone(){
