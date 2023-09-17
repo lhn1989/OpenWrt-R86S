@@ -35,7 +35,7 @@ sed -i "/helloworld/d" "feeds.conf.default"
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 
 # Add subconverter
-echo "src-git cussubconverter git@github.com:lhn1989/luci-app-cussubconverter.git" >> "feeds.conf.default"
+echo "src-git luci-app-cussubconverter git@github.com:lhn1989/luci-app-cussubconverter.git" >> "feeds.conf.default"
 
 # Add subconverter
 echo "src-git subconverter https://github.com/tindy2013/openwrt-subconverter.git" >> "feeds.conf.default"
