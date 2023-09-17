@@ -44,3 +44,5 @@ echo "src-git subconverter https://github.com/tindy2013/openwrt-subconverter.git
 shallowClone $OPENCLASH_DIR $OPENCLASH_GIT $OPENCLASH_SRC $OPENCLASH_BRANCH
 mv /workdir/$OPENCLASH_DIR/$OPENCLASH_SRC /workdir/openwrt/package/
 rm -rf /workdir/$OPENCLASH_DIR
+
+cat feeds.conf.default
