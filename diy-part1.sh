@@ -35,14 +35,14 @@ sed -i "/helloworld/d" "feeds.conf.default"
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 
 # Add subconverter
-echo "src-git luci-app-cussubconverter git@github.com:lhn1989/luci-app-cussubconverter.git" >> "feeds.conf.default"
+echo "src-git luci-app-cussubconverter https://github.com/lhn1989/luci-app-cussubconverter.git" >> "feeds.conf.default"
 
 # Add subconverter
 echo "src-git subconverter https://github.com/tindy2013/openwrt-subconverter.git" >> "feeds.conf.default"
+
+cat feeds.conf.default
 
 # Add openclash
 shallowClone $OPENCLASH_DIR $OPENCLASH_GIT $OPENCLASH_SRC $OPENCLASH_BRANCH
 mv /workdir/$OPENCLASH_DIR/$OPENCLASH_SRC /workdir/openwrt/package/
 rm -rf /workdir/$OPENCLASH_DIR
-
-cat feeds.conf.default
