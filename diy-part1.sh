@@ -34,7 +34,7 @@ set -x
 sed -i "/helloworld/d" "feeds.conf.default"
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 
-# Add subconverter
+# Add cussubconverter
 echo "src-git cussubconverter https://github.com/lhn1989/luci-app-cussubconverter.git" >> "feeds.conf.default"
 
 # Add subconverter
