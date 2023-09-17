@@ -41,6 +41,7 @@ echo "src-git luci-app-cussubconverter https://github.com/lhn1989/luci-app-cussu
 echo "src-git subconverter https://github.com/tindy2013/openwrt-subconverter.git" >> "feeds.conf.default"
 
 cat feeds.conf.default
+sleep 10
 
 # Add openclash
 shallowClone $OPENCLASH_DIR $OPENCLASH_GIT $OPENCLASH_SRC $OPENCLASH_BRANCH
