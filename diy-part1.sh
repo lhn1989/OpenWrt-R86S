@@ -40,9 +40,6 @@ echo "src-git cussubconverter https://github.com/lhn1989/luci-app-cussubconverte
 # Add subconverter
 echo "src-git subconverter https://github.com/tindy2013/openwrt-subconverter.git" >> "feeds.conf.default"
 
-cat feeds.conf.default
-sleep 10
-
 # Add openclash
 shallowClone $OPENCLASH_DIR $OPENCLASH_GIT $OPENCLASH_SRC $OPENCLASH_BRANCH
 mv /workdir/$OPENCLASH_DIR/$OPENCLASH_SRC /workdir/openwrt/package/
