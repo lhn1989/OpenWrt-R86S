@@ -46,6 +46,7 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
+        df -hT $PWD
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
         sudo -E apt-get -qq full-upgrade
@@ -55,6 +56,14 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
+
+    - name: Free disk space
+      run: |
+        df -hT $PWD
+        sudo swapoff -a
+        sudo rm -f /swapfile
+        sudo apt clean
+        docker rmi $(docker image ls -aq)
 
     - name: Clone source code
       working-directory: /workdir
